@@ -19,26 +19,35 @@ class projectcontroller extends Controller
         $detail->Email=$req->email;
         $detail->Project_Title=$req->Title;
         $detail->Introduction=$req->intro;
-        if($req ->hasfile('pdf'))
+        $file=$req->file('pdf');
+        $extension=$file->getClientOriginalExtension(); //getting extension
+        if($req ->hasfile('pdf') && $extension=='pdf')
         {
-            $file=$req->file('pdf');
-            $extension=$file->getClientOriginalExtension(); //getting extension
+            
             $filename=time().'.'.$extension;
             $file->move('upload/detail/', $filename);
             $detail->pdf=$filename;
             
 
         }
-
+        else{
+            return redirect()->back()->with('show','You uploaded Wrong File. Please Enter Valid File Again');
+        }
+       
+        $file1=$req->file('ppt');
+        $extension1=$file1->getClientOriginalExtension();//getting extension
         
-        if($req ->hasfile('ppt'))
+        if($req ->hasfile('ppt') && $extension1=='pptx')
         {
-            $file=$req->file('ppt');
-            $extension1=$file->getClientOriginalExtension();//getting extension
+            
             $filename=Str::random(4). '.' . $extension1;
-            $file->move('upload/detail/', $filename);
+            $file1->move('upload/detail/', $filename);
             $detail->ppt=$filename;
     
+        }
+        else{
+            return redirect()->back()->with('view','You uploaded Wrong File. Please Enter Valid File Again');
+            
         }
             
 

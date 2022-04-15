@@ -7,36 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Project Report Details </title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-body	
-{
-    background-color:#FAF0E6;
-}
-.form1{
 
-	/* margin-top: 50px;
-	margin-left: 300px;
-	margin-right: 300px; */
-	max-width: 600px;
-	margin: auto;
-	margin-top:20px;
-}
-
-.required:after {
-    content:" *";
-    color: red;
-}
-.heading
-        {
-            margin-top:20px;
-            color: crimson;
-            font-family: "Times New Roman", Times, serif;
-        }
-</style>
 <body >
+@if(session('view'))
+  <h4 class="alert alert-danger" >{{session('view')}}</h4>
+
+@endif
+@if(session('show'))
+  <h4 class="alert alert-danger" >{{session('show')}}</h4>
+
+@endif
 @if(session('status'))
-  <h4 class="alert alert-success" >{{session('status')}}</h6>
+  <h4 class="alert alert-success" >{{session('status')}}</h4>
 
 @endif
 

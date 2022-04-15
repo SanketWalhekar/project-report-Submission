@@ -1,0 +1,27 @@
+
+body	
+{
+    background-color:#FAF0E6;
+}
+.form1{
+
+	/* margin-top: 50px;
+	margin-left: 300px;
+	margin-right: 300px; */
+	max-width: 600px;
+	margin: auto;
+	margin-top:20px;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+.heading
+        {
+            margin-top:20px;
+            color: crimson;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+

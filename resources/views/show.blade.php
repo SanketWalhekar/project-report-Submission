@@ -2,34 +2,11 @@
 <head>
 <title>Data Project</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="css/show.css">
 </head>
-<style>
 
-</style>
 <body>
-    <style>
-        body
-        {
-            background-color: #FFF8DC;
-        }
-        .heading
-        {
-            margin-top:10px;
-            color: crimson;
-            font-family: "Times New Roman", Times, serif;
-        }
-        .container
-        {
-            
-           margin-top:30px;
-            font-family: "Times New Roman", Times, serif;
-        }
-        .table
-        {
-            margin-top:0px;
-        }
-
-    </style>
+    
 <div class="heading">
 	<h2 >
 		<center><b><u>Project Report Submition Data</u></b></center>
