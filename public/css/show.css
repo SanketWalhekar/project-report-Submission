@@ -1,12 +1,13 @@
 
         body
         {
-            background-color: #FFF8DC;
+            /* background-color: #FFF8DC; */
+            background-image: linear-gradient(to right, #9AA4EC , violet);
         }
         .heading
         {
             margin-top:10px;
-            color: crimson;
+            color: rgb(204, 18, 221);
             font-family: "Times New Roman", Times, serif;
         }
         .container

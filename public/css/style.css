@@ -1,7 +1,8 @@
 
 body	
 {
-    background-color:#FAF0E6;
+    /* background-color:#9AA4EC; */
+    background-image: linear-gradient(to right, #9AA4EC , violet);
 }
 .form1{
 
@@ -20,7 +21,7 @@ body
 .heading
         {
             margin-top:20px;
-            color: crimson;
+            color: rgb(204, 18, 221);
             font-family: "Times New Roman", Times, serif;
         }
 

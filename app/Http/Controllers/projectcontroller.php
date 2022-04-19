@@ -31,7 +31,7 @@ class projectcontroller extends Controller
 
         }
         else{
-            return redirect()->back()->with('show','You uploaded Wrong File. Please Enter Valid File Again');
+            return redirect()->back()->with('show','You uploaded Wrong File. You have allowed to upload PDF Files Only....!!!!');
         }
        
         $file1=$req->file('ppt');
@@ -40,13 +40,13 @@ class projectcontroller extends Controller
         if($req ->hasfile('ppt') && $extension1=='pptx')
         {
             
-            $filename=Str::random(4). '.' . $extension1;
+            $filename=Str::random(6). '.' . $extension1;
             $file1->move('upload/detail/', $filename);
             $detail->ppt=$filename;
     
         }
         else{
-            return redirect()->back()->with('view','You uploaded Wrong File. Please Enter Valid File Again');
+            return redirect()->back()->with('view','You uploaded Wrong File. You have allowed to upload PPT Files Only....!!!!');
             
         }
             
@@ -59,7 +59,7 @@ class projectcontroller extends Controller
         $detail->github=$req->url;
         $detail->save();
 
-         return redirect()->back()->with('status','Data Updated Succussfully');
+         return redirect()->back()->with('status','Data Updated Succussfully...!!!!!!');
     }
     
     

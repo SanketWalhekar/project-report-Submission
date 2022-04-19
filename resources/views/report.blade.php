@@ -12,15 +12,15 @@
 
 <body >
 @if(session('view'))
-  <h4 class="alert alert-danger" >{{session('view')}}</h4>
+  <h6 class="alert alert-warning" >{{session('view')}}</h6>
 
 @endif
 @if(session('show'))
-  <h4 class="alert alert-danger" >{{session('show')}}</h4>
+  <h6 class="alert alert-warning" >{{session('show')}}</h6>
 
 @endif
 @if(session('status'))
-  <h4 class="alert alert-success" >{{session('status')}}</h4>
+  <h6 class="alert alert-success" >{{session('status')}}</h6>
 
 @endif
 
